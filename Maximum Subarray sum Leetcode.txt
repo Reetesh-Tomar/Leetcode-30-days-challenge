@@ -1,0 +1,8 @@
+import math
+nums=list(map(int,input().split()))
+current=0
+max_sum=-math.inf
+for i in range(0,len(nums)):
+    current=max(nums[i],current+nums[i])
+    max_sum=max(current,max_sum)
+print(max_sum)
